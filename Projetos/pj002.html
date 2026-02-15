@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body{
+            background-color: rgb(8, 146, 146);
+            color: black;
+            font: normal 20pt Arial;
+            h1{
+                color: beige;            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, seu Primeiro Programa!</h1>
+    <p>Primeiro projeto com JavaScript!</p>
+    <script>
+        var nome = window.prompt('Qual é seu nome')
+        var idade = Number(window.prompt('Qual é sua idade?'))
+        //dis sua idade e se e maior ou menor de idade
+        window.alert(`Olá, ${nome}! você tem ${idade} anos. Você é ${idade >= 18 ? 'MAIOR' : 'MENOR'} de idade Seja bem Vindo! `)
+        var nota = Number(window.prompt(`${nome}, Por favor. Diga a nota que Vocé da para esse Projeto`))
+        //dis sua nota e qual a margema aceitavel 
+        window.alert(`Sua nota ${nome}! foi ${nota}. Nota ${nota >= 7 ? 'Muito boa' : 'Irei Melhorar'} para o projeto.`)
+        var salario = Number(window.prompt('Pode me dizer quanto ganha?'))
+        //dis qual e o salario e em qual moeda é
+        window.alert(`Seu salario é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>

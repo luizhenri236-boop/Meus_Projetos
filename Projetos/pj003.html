@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale sobre Você</title>
+</head>
+<body>
+    <h1>Fale sobre Você?</h1>
+    <p><strong>Qual é seu Nome?</strong></p><input type="text" name="txtname" id="txtname">
+    <input type="button" value="Verificar" onclick="VerificarName()"><br>
+
+    <div id="names">
+
+    </div>
+    <p><strong>Digame sua Idade?<strong></p><input type="number" name="txtidade" id="txtidade">
+    <input type="button" value="Verificar" onclick="VerificarIdade()">
+
+    <div id="idades">
+
+    </div>
+    <script>
+        function VerificarName() {
+            var txtn = document.querySelector('input#txtname')
+            var names = document.querySelector('div#names')
+            var name = txtn.value
+
+        names.innerHTML = `<p>Olá, seja bem Vindo <strong>${name}</strong>!</p>`
+        }
+        function VerificarIdade() {
+            //idade
+            var txti = document.querySelector('input#txtidade')
+            var idades = document.querySelector('div#idades')
+            //name
+            var txtn = document.querySelector('input#txtname')
+            var names = document.querySelector('div#names')
+
+            var idade = Number(txti.value)
+            var name = txtn.value
+            
+        idades.innerHTML = `<p>Você <strong>${name}</strong> tem ${idade} anos!<p/>`
+        
+        if (idade >= 18) {
+            idades.innerHTML += `Você ${name} é de maior!</p>`
+        }else if (idade <= 16) {
+            idades.innerHTML += `<p>Você ${name} é de menor!</p>`
+        }else if (idade > 60) {
+            idades.innerHTML += `<p>Você ${name} é idoso</p>`
+        }
+    }
+    </script>
+</body>
+</html>

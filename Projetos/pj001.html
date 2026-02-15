@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body{
+            background-color: rgb(8, 146, 146);
+            color: black;
+            font: normal 20pt Arial;
+            h1{
+                color: beige;            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, seu Primeiro Programa!</h1>
+    <p>Primeiro projeto com JavaScript! Siga a Baixo!</p>
+    <script>
+        var nome = window.prompt('Como é seu nome?')
+        var idade = Number(window.prompt('Sua idade?'))
+    window.alert(`Olá, ${nome}! você tem ${idade} anos. Você é ${idade >= 18 ? 'maior' : 'menor'} de idade Seja bem Vindo! `)
+        window.alert(`Vamos calcular um pouco ${nome}, ok?`)
+        //transforma string em Number
+        var n1 = Number(window.prompt('Digite um número' ))
+        var n2 = Number(window.prompt('Diga outo número'))
+        var soma = n1 + n2
+        window.alert(`O resultado de ${n1} + ${n2} = ${soma}`)
+        var salario = Number(window.prompt('Qual sua é a sua renda?'))
+        //dis eu salario organizado e qual moeda dependendo do pais
+         window.alert(`Seu salario ${nome} é! ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+         var nota = Number(window.prompt(`${nome}, Por favor. Diga a nota que Vocé da para esse Projeto`))
+           //dis sua nota e qual a margema aceitavel 
+        window.alert(`Sua nota ${nome}! foi ${nota}. Nota ${nota >= 7 ? 'Muito boa' : 'Irei Melhorar'} para o projeto.`)
+        window.alert(`Agora ${nome}, Vamos ver algumas altarações em seu nome, ok?`)
+        document.write(`Obrigado ${nome} pelo ${nota}, sua nota nos ajuda a melhorar cada vez mais!<br/>`)
+        //escreve na tela qunatos caracteres tem
+        document.write(`Olá ${nome} Seu nome tem ${nome.length} letras.<br/>`)
+        //escreve em MAIÚSCULO
+        document.write(`Seu nome ${nome} em maiúsculas é ${nome.toUpperCase()}<br/>`)
+        //escrve em minúsculo
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>
