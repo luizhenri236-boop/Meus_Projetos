@@ -12,11 +12,16 @@
     </header>
     <section>
         <div>
-        <p>Item de compra: <input type="text" name="itemCompra" id=""></p>
-        </div>
-        <div>
+
+        <input type="text" id="txtItem" placeholder="Digite um item">
+        <input type="button" value="Adicionar" onclick="adicionar()">
+        <br><input type="button" value="Remover" onclick="removerItem()">
+        <input type="button" value="Organizar" onclick="organizarLista()">
 
         </div>
+
+        <div id="res"></div>
+        <p id="total"></p>
     </section>
     <footer>
         <p>&copy; Lista de compras</p>
