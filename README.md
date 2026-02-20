@@ -1,3 +1,3 @@
 # Meus projetos e Praticas
 ---
-## Projetos
+## *Projetos feitos para consolidar meu aprendizado*
