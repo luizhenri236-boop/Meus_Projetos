@@ -2,4 +2,4 @@
 ---
 ## *Projetos feitos para consolidar meu aprendizado*
 ---
-## *Projetos feitos para monstras minha evolução*
+* *Projetos feitos para monstras minha evolução*
