@@ -46,7 +46,7 @@ function calcular() {
     if (operacao === ''){
 
         res.innerHTML += '<p>Escolha sua operação para reaizar seu calculo!</p>'
-
+        return
     }
 
     switch (operacao) {
@@ -77,5 +77,5 @@ function calcular() {
             break
     }
 
-    res.innerHTML += resutado
+    res.innerHTML += `<p>Resultado: <strong>${resultado}</strong></p>`
 }
