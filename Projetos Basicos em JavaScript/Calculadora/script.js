@@ -45,7 +45,7 @@ function calcular() {
     
     if (operacao === ''){
 
-        res.innerHTML += '<p>Escolha sua operação para reaizar seu calculo!</p>'
+        res.innerHTML = '<p>Escolha sua operação para reaizar seu calculo!</p>'
         return
     }
 
@@ -77,5 +77,5 @@ function calcular() {
             break
     }
 
-    res.innerHTML += `<p>Resultado: <strong>${resultado}</strong></p>`
+    res.innerHTML += `<p>Resultado: <strong>${resutado}</strong></p>`
 }
