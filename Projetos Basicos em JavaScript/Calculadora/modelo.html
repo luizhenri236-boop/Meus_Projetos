@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora simples</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos calcular</h1>
+    </header>
+    <section>
+        <div>
+            Digame quais números quer calcular
+            <input type="number" name="txtnum1" id="txtnum1" placeholder="Digite um número">
+            <br>
+            <input type="number" name="txtnum2" id="txtnum2" placeholder="Digite outro número">
+            <br>Digame qual calculo deseja fazer
+            <p>
+            <input type="button" value="+" onclick="somar()">
+            <input type="button" value="-" onclick="subtrair()">
+            <input type="button" value="*" onclick="multiplicar()">
+            <input type="button" value="/" onclick="dividir()">
+            <input type="button" value="%" onclick="resto()">
+            </p>
+            <p><input type="button" value="Calcular" onclick="calcular()"></p>
+        </div>
+        <div id="res">
+            Calculando...
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Calculadora simples</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
