@@ -2,4 +2,4 @@
 ---
 ## *Projetos feitos para consolidar meu aprendizado*
 ---
-* *Projetos feitos para mostrar minha evolução*
+1. *Projetos feitos para mostrar minha evolução*
